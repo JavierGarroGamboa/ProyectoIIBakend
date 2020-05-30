@@ -13,7 +13,7 @@ import una.ac.cr.service.DoctorOfficeServiceImpl;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/api/DoctorOffices")
+@RequestMapping(value = "/api/doctorOffices")
 public class DoctorOfficeController {
     private DoctorOfficeService doctorOfficeService = new DoctorOfficeServiceImpl();
 
@@ -64,5 +64,38 @@ public class DoctorOfficeController {
                     HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa Service", ex);
         }
         return officeSaved;
+    }
+
+    @PutMapping(consumes = "application/json", produces = "application/json")
+    @ResponseBody
+    public DoctorOffice update(@RequestBody DoctorOffice doctorOffice) {
+        DoctorOffice patientSaved = null;
+        try {
+            patientSaved = doctorOfficeService.update(doctorOffice);
+        } catch (DAOException bex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa DAO", bex);
+        } catch (ServiceException ex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa Service", ex);
+        }
+        return patientSaved;
+    }
+
+    @DeleteMapping("{id}")
+    @ResponseBody
+    public boolean delete(@PathVariable int id) {
+        boolean isDeleted;
+        try {
+            isDeleted = doctorOfficeService.delete(id);
+        } catch (DAOException bex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,"Error importante - Capa DAO", bex);
+        } catch (ServiceException ex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa Service", ex);
+        }
+
+        return isDeleted;
     }
 }

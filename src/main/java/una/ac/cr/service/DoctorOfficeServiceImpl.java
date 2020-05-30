@@ -62,4 +62,35 @@ public class DoctorOfficeServiceImpl implements DoctorOfficeService {
         officeSaved = doctorOfficeDAO.save(office);
         return officeSaved;
     }
+
+    /**
+     * Update a patient in the database
+     *
+     *
+     * @param office@return the Update patient entity
+     * @throws DAOException     DAO Exception
+     * @throws ServiceException Service Exception
+     */
+
+    public DoctorOffice update(DoctorOffice office) throws DAOException, ServiceException {
+        DoctorOffice doctorOfficeUpdate;
+        doctorOfficeDAO = new DoctorOfficeDAOImpl();
+        doctorOfficeUpdate = doctorOfficeDAO.update(office);
+        return doctorOfficeUpdate;
+    }
+
+    /**
+     * Delete a patient in the database
+     *
+     * @param id the identify of the patient
+     * @return true if a success delete
+     * @throws DAOException DAO Exception
+     * @throws ServiceException Service Exception
+     */
+    public boolean delete(int id) throws DAOException, ServiceException {
+        boolean isDeleted;
+        doctorOfficeDAO = new DoctorOfficeDAOImpl();
+        isDeleted = doctorOfficeDAO.delete(id);
+        return isDeleted;
+    }
 }

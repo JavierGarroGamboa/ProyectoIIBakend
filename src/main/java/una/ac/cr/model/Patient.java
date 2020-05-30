@@ -26,6 +26,8 @@ public class Patient {
     private String dateBorn;
     @Column(name = "name")
     private String name;
+    @Column(name = "address")
+    private String address;
 
     @OneToMany(
             cascade = CascadeType.ALL,
@@ -33,12 +35,6 @@ public class Patient {
     )
     @Column(name = "telephoneList")
     private List<Telephone> telephoneList = new ArrayList<>();
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
-    @Column(name = "addressList")
-    private List<Address> addressList = new ArrayList<>();
 
     @Column(name = "associatedDiseases")
     private String associatedDiseases;
@@ -56,43 +52,75 @@ public class Patient {
      * @param id_patient
      * @param dateBorn
      * @param name
+     * @param address
      * @param telephoneList
-     * @param addressList
      * @param associatedDiseases
      * @param observations
      */
-    public Patient(int id_patient, String dateBorn, String name, List<Telephone> telephoneList, List<Address> addressList, String associatedDiseases, String observations) {
+    public Patient(int id_patient, String dateBorn, String name, String address, List<Telephone> telephoneList, String associatedDiseases, String observations) {
         this.id_patient = id_patient;
         this.dateBorn = dateBorn;
         this.name = name;
+        this.address = address;
         this.telephoneList = telephoneList;
-        this.addressList = addressList;
         this.associatedDiseases = associatedDiseases;
         this.observations = observations;
     }
 
+    /**
+     * @return
+     */
     public int getId_patient() {
         return id_patient;
     }
 
+    /**
+     * @param id_patient
+     */
     public void setId_patient(int id_patient) {
         this.id_patient = id_patient;
     }
 
+    /**
+     * @return
+     */
     public String getDateBorn() {
         return dateBorn;
     }
 
+    /**
+     * @param dateBorn
+     */
     public void setDateBorn(String dateBorn) {
         this.dateBorn = dateBorn;
     }
 
+    /**
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * @return
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * @param address
+     */
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<Telephone> getTelephoneList() {
@@ -103,26 +131,30 @@ public class Patient {
         this.telephoneList = telephoneList;
     }
 
-    public List<Address> getAddressList() {
-        return addressList;
-    }
-
-    public void setAddressList(List<Address> addressList) {
-        this.addressList = addressList;
-    }
-
+    /**
+     * @return
+     */
     public String getAssociatedDiseases() {
         return associatedDiseases;
     }
 
+    /**
+     * @param associatedDiseases
+     */
     public void setAssociatedDiseases(String associatedDiseases) {
         this.associatedDiseases = associatedDiseases;
     }
 
+    /**
+     * @return
+     */
     public String getObservations() {
         return observations;
     }
 
+    /**
+     * @param observations
+     */
     public void setObservations(String observations) {
         this.observations = observations;
     }
@@ -131,12 +163,12 @@ public class Patient {
     public String toString() {
         return "Patient{" +
                 "id_patient=" + id_patient +
-                ", dateBorn='" + dateBorn +
-                ", name='" + name +
+                ", dateBorn='" + dateBorn + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
                 ", telephoneList=" + telephoneList +
-                ", addressList=" + addressList +
-                ", associatedDiseases='" + associatedDiseases +
-                ", observations='" + observations +
+                ", associatedDiseases='" + associatedDiseases + '\'' +
+                ", observations='" + observations + '\'' +
                 '}';
     }
 }

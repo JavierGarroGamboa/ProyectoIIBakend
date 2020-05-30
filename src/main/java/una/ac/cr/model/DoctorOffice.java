@@ -26,6 +26,8 @@ public class DoctorOffice {
     private String name;
     @Column(name = "schedule")
     private String schedule;
+    @Column(name = "address")
+    private String address;
 
     @OneToMany(
             cascade = CascadeType.ALL,
@@ -33,12 +35,6 @@ public class DoctorOffice {
     )
     @Column(name = "telephoneList")
     private List<Telephone> telephoneList = new ArrayList<>();
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
-    @Column(name = "addressList")
-    private List<Address> addressList = new ArrayList<>();
 
     /**
      *
@@ -46,20 +42,12 @@ public class DoctorOffice {
     public DoctorOffice() {
     }
 
-    /**
-     *
-     * @param id_office
-     * @param name
-     * @param schedule
-     * @param telephoneList
-     * @param addressList
-     */
-    public DoctorOffice(int id_office, String name, String schedule, List<Telephone> telephoneList, List<Address> addressList) {
+    public DoctorOffice(int id_office, String name, String schedule, String address, List<Telephone> telephoneList) {
         this.id_office = id_office;
         this.name = name;
         this.schedule = schedule;
+        this.address = address;
         this.telephoneList = telephoneList;
-        this.addressList = addressList;
     }
 
     public int getId_office() {
@@ -86,6 +74,14 @@ public class DoctorOffice {
         this.schedule = schedule;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public List<Telephone> getTelephoneList() {
         return telephoneList;
     }
@@ -94,22 +90,14 @@ public class DoctorOffice {
         this.telephoneList = telephoneList;
     }
 
-    public List<Address> getAddressList() {
-        return addressList;
-    }
-
-    public void setAddressList(List<Address> addressList) {
-        this.addressList = addressList;
-    }
-
     @Override
     public String toString() {
         return "DoctorOffice{" +
                 "id_office=" + id_office +
                 ", name='" + name +
                 ", schedule='" + schedule +
+                ", address='" + address +
                 ", telephoneList=" + telephoneList +
-                ", addressList=" + addressList +
                 '}';
     }
 }

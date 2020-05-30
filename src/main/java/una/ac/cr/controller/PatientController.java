@@ -65,4 +65,37 @@ public class PatientController {
         }
         return patientSaved;
     }
+
+    @PutMapping(consumes = "application/json", produces = "application/json")
+    @ResponseBody
+    public Patient update(@RequestBody Patient patient) {
+        Patient patientSaved = null;
+        try {
+            patientSaved = patientService.update(patient);
+        } catch (DAOException bex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa DAO", bex);
+        } catch (ServiceException ex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa Service", ex);
+        }
+        return patientSaved;
+    }
+
+    @DeleteMapping("id_patient")
+    @ResponseBody
+    public boolean delete(@RequestParam int id) {
+        boolean isDeleted;
+        try {
+            isDeleted = patientService.delete(id);
+        } catch (DAOException bex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,"Error importante - Capa DAO", bex);
+        } catch (ServiceException ex) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR, "Error importante - Capa Service", ex);
+        }
+
+        return isDeleted;
+    }
 }

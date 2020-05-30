@@ -2,32 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66fc376a-9026-42d6-a879-6612277f9107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/BackendServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/controller/DoctorOfficeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/dao/DoctorOfficeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/dao/DoctorOfficeDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/dao/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/dao/PatientDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/dao/PatientDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/exception/DAOException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/DoctorOffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Telephone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/DoctorOfficeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/DoctorOfficeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/PatientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/AdmitMedicalOffice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/MedicalOfficeRegistration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/RegistrationAgenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/controller/DoctorOfficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/controller/DoctorOfficeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/DoctorOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/DoctorOffice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Telephone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/model/Telephone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/DoctorOfficeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/DoctorOfficeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/DoctorOfficeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/DoctorOfficeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/una/ac/cr/service/PatientServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +35,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/una/ac/cr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/una/ac/cr/controller" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -62,9 +52,32 @@
       <recent name="una.ac.cr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Javig\IdeaProjects\ProyectoIIBakend\src\main\java\una\ac\cr\controller" />
+      <recent name="C:\Users\Javig\IdeaProjects\ProyectoIIBakend\src\main\java\una\ac\cr\dao" />
+      <recent name="C:\Users\Javig\IdeaProjects\ProyectoIIBakend\src\main\java\una\ac\cr\service" />
+      <recent name="C:\Users\Javig\IdeaProjects\ProyectoIIBakend\src\main\java\una\ac\cr\model" />
       <recent name="C:\Users\Javig\IdeaProjects\ProyectoIIBakend\src\main\java\una\ac\cr" />
-      <recent name="C:\Users\Javig\IdeaProjects\Proyecto_Bakend\src\main\java\una\ac\cr\model" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BackendServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto_Bakend.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="una.ac.cr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="una.ac.cr.BackendServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BackendServiceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,7 +92,10 @@
       <workItem from="1590010543792" duration="111000" />
       <workItem from="1590010808246" duration="123000" />
       <workItem from="1590011061861" duration="1793000" />
-      <workItem from="1590695390580" duration="1659000" />
+      <workItem from="1590695390580" duration="2483000" />
+      <workItem from="1590698623184" duration="2180000" />
+      <workItem from="1590720947223" duration="4160000" />
+      <workItem from="1590840578591" duration="1106000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto Backend">
       <created>1590011223187</created>
@@ -95,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590011409990</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Proyecto Backend - Prueba">
+      <created>1590697619050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590697619050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,17 +126,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proyecto Backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proyecto Backend" />
+    <MESSAGE value="Proyecto Backend - Prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto Backend - Prueba" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1590696461409">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1590841563734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590696461409" />
-    <state x="293" y="0" key="CommitChangelistDialog2" timestamp="1590011399770">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590841563734" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590840841772">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="293" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590011399770" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590840841772" />
+    <state x="293" y="0" key="CommitChangelistDialog2" timestamp="1590697615812">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="293" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590697615812" />
     <state x="543" y="262" key="Github.ShareDialog" timestamp="1590011133134">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -122,13 +150,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="436" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590011146415" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590840992839">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590840992839" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1590840992840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590840992840" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1590010904936">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590010904936" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590011408067">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590697626663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590011408067" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590697626663" />
   </component>
 </project>

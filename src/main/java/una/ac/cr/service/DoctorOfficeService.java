@@ -40,4 +40,24 @@ public interface DoctorOfficeService {
      */
     public DoctorOffice save(DoctorOffice office) throws DAOException, ServiceException;
 
+    /**
+     * Update a doctorOffice in the database
+     *
+     * @param doctorOffice the doctorOffice entity with the information to save
+     * @return the update doctorOffice entity
+     * @throws DAOException     DAO Exception
+     * @throws ServiceException Service Exception
+     */
+    public DoctorOffice update(DoctorOffice doctorOffice) throws DAOException, ServiceException;
+
+    /**
+     * Delete a doctorOffice in the database
+     *
+     * @param id the identify of the doctorOffice
+     * @return true if a success delete
+     * @throws DAOException DAO Exception
+     * @throws ServiceException Service Exception
+     */
+    public boolean delete(int id) throws DAOException, ServiceException;
+
 }

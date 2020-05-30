@@ -62,4 +62,35 @@ public class PatientServiceImpl implements PatientService {
         patientSaved = patientDAO.save(patient);
         return patientSaved;
     }
+
+    /**
+     * Update a patient in the database
+     *
+     * @param patient the patient entity with the information to save
+     * @return the Update patient entity
+     * @throws DAOException     DAO Exception
+     * @throws ServiceException Service Exception
+     */
+
+    public Patient update(Patient patient) throws DAOException, ServiceException {
+        Patient patientUpdate;
+        patientDAO = new PatientDAOImpl();
+        patientUpdate = patientDAO.update(patient);
+        return patientUpdate;
+    }
+
+    /**
+     * Delete a patient in the database
+     *
+     * @param id the identify of the patient
+     * @return true if a success delete
+     * @throws DAOException DAO Exception
+     * @throws ServiceException Service Exception
+     */
+    public boolean delete(int id) throws DAOException, ServiceException {
+        boolean isDeleted;
+        patientDAO = new PatientDAOImpl();
+        isDeleted = patientDAO.delete(id);
+        return isDeleted;
+    }
 }

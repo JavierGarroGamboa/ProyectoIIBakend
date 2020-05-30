@@ -32,7 +32,7 @@ public interface PatientService {
     public Patient findById(int id) throws DAOException, ServiceException;
 
     /**
-     * Save client in the database
+     * Save patient in the database
      *
      * @param patient the patient entity with the information to save
      * @return the saved patient entity
@@ -40,4 +40,24 @@ public interface PatientService {
      * @throws ServiceException Service Exception
      */
     public Patient save(Patient patient) throws DAOException, ServiceException;
+
+    /**
+     * Update a patient in the database
+     *
+     * @param patient the patient entity with the information to save
+     * @return the update patient entity
+     * @throws DAOException     DAO Exception
+     * @throws ServiceException Service Exception
+     */
+    public Patient update(Patient patient) throws DAOException, ServiceException;
+
+    /**
+     * Delete a patient in the database
+     *
+     * @param id the identify of the patient
+     * @return true if a success delete
+     * @throws DAOException DAO Exception
+     * @throws ServiceException Service Exception
+     */
+    public boolean delete(int id) throws DAOException, ServiceException;
 }
